@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="128" fill="#1a237e"/>
+
+  <!-- Speech bubble -->
+  <path d="M96 140 Q96 96 140 96 L372 96 Q416 96 416 140 L416 300 Q416 344 372 344 L300 344 L256 416 L212 344 L140 344 Q96 344 96 300 Z" fill="#e0f7fa"/>
+
+  <!-- Letters inside -->
+  <text x="256" y="200" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="#1a237e" text-anchor="middle">Aa</text>
+
+  <!-- Sound wave dots -->
+  <circle cx="180" cy="260" r="10" fill="#ff3d00"/>
+  <circle cx="210" cy="260" r="10" fill="#ff3d00"/>
+  <circle cx="240" cy="260" r="10" fill="#ff3d00"/>
+  <circle cx="270" cy="260" r="10" fill="#ff3d00" opacity="0.7"/>
+  <circle cx="300" cy="260" r="10" fill="#ff3d00" opacity="0.4"/>
+  <circle cx="330" cy="260" r="10" fill="#ff3d00" opacity="0.2"/>
+</svg>

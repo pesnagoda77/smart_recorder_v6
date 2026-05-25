@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="128" fill="#1a237e"/>
+  
+  <!-- Microphone body -->
+  <rect x="196" y="96" width="120" height="200" rx="60" fill="#e0f7fa"/>
+  
+  <!-- Microphone grill lines -->
+  <line x1="226" y1="136" x2="226" y2="256" stroke="#1a237e" stroke-width="8" stroke-linecap="round"/>
+  <line x1="256" y1="136" x2="256" y2="256" stroke="#1a237e" stroke-width="8" stroke-linecap="round"/>
+  <line x1="286" y1="136" x2="286" y2="256" stroke="#1a237e" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Microphone stand -->
+  <path d="M256 296 L256 376" stroke="#e0f7fa" stroke-width="20" stroke-linecap="round"/>
+  <path d="M196 376 L316 376" stroke="#e0f7fa" stroke-width="20" stroke-linecap="round"/>
+  
+  <!-- Recording dot -->
+  <circle cx="316" cy="156" r="32" fill="#ff3d00"/>
+  <circle cx="316" cy="156" r="20" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="128" fill="#1a237e"/>
+
+  <!-- Lightning bolt -->
+  <path d="M320 96 L200 240 L260 240 L220 416 L360 256 L300 256 Z" fill="#e0f7fa"/>
+
+  <!-- Sound wave from lightning -->
+  <path d="M120 256 Q160 216 200 256" stroke="#ff3d00" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M100 276 Q160 216 220 276" stroke="#ff3d00" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M80 296 Q160 216 240 296" stroke="#ff3d00" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.4"/>
+</svg>
