@@ -11,7 +11,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace "com.example.smart_recorder_v6"
+    namespace "com.dictapro.app"
     compileSdk 35
     ndkVersion flutter.ndkVersion
 
@@ -29,7 +29,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.smart_recorder_v6"
+        applicationId "com.dictapro.app"
         minSdk 21
         targetSdk 35
         versionCode 1

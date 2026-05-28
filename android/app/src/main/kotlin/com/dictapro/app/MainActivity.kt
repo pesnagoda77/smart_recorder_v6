@@ -1,4 +1,4 @@
-package com.example.smart_recorder_v6
+package com.dictapro.app
 
 import android.media.MediaCodec
 import android.media.MediaExtractor
@@ -15,8 +15,8 @@ import java.nio.ByteBuffer
 import java.nio.ByteOrder
 
 class MainActivity : FlutterActivity() {
-    private val CHANNEL = "smart_recorder/convert"
-    private val TAG = "SmartRecorder"
+    private val CHANNEL = "dictapro/convert"
+    private val TAG = "DictaPro"
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)

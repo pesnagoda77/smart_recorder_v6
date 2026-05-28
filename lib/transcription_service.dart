@@ -55,7 +55,7 @@ class TranscriptionService {
   final _vosk = VoskFlutterPlugin.instance();
   Recognizer? _recognizer;
   bool _isModelLoaded = false;
-  static const _platform = MethodChannel('smart_recorder/convert');
+  static const _platform = MethodChannel('dictapro/convert');
 
   Future<void> initModel() async {
     if (_isModelLoaded) return;
