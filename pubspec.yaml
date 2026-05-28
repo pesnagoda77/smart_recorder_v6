@@ -1,5 +1,5 @@
-name: smart_recorder_v6
-description: Smart voice recorder
+name: dictapro
+description: DictaPro - voice recorder with AI transcription
 publish_to: 'none'
 version: 1.0.0+1
 
