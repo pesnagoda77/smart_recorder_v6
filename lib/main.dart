@@ -3,6 +3,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'audio_service.dart';
 import 'transcription_service.dart';
 import 'home_page.dart';
+import 'splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,7 +29,32 @@ class DictaProApp extends StatelessWidget {
           surface: Color(0xFF1E1E2E),
         ),
       ),
-      home: const HomePage(),
+      home: const SplashWrapper(),
     );
+  }
+}
+
+class SplashWrapper extends StatefulWidget {
+  const SplashWrapper({super.key});
+
+  @override
+  State<SplashWrapper> createState() => _SplashWrapperState();
+}
+
+class _SplashWrapperState extends State<SplashWrapper> {
+  bool _showSplash = true;
+
+  @override
+  Widget build(BuildContext context) {
+    if (_showSplash) {
+      return SplashScreen(
+        onComplete: () {
+          setState(() {
+            _showSplash = false;
+          });
+        },
+      );
+    }
+    return const HomePage();
   }
 }
