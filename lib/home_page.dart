@@ -667,8 +667,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 ),
                 onChanged: (value) => setState(() => _searchQuery = value),
               )
-            : const Text('ДиктаПро',
-                style: TextStyle(fontWeight: FontWeight.bold)),
+            : const Center(
+                child: Text('ДиктаПро',
+                    style: TextStyle(fontWeight: FontWeight.bold))),
         centerTitle: !_isSearching,
         elevation: 0,
         leading: _isSearching

@@ -75,7 +75,7 @@ class Recording {
         'tags': tags,
         'summary': summary,
         'decisions': decisions,
-        'speakerStats': speakerStats,
+        'speakerStats': speakerStats?.map((s) => s.map((k, v) => MapEntry(k, v.toString()))).toList(),
       };
 
   factory Recording.fromMap(Map<String, dynamic> map) => Recording(
@@ -101,7 +101,7 @@ class Recording {
             : null,
         speakerStats: map['speakerStats'] != null
             ? (map['speakerStats'] as List)
-                .map((item) => Map<String, dynamic>.from(item as Map))
+                .map((item) => (item as Map).map((k, v) => MapEntry<String, dynamic>(k as String, v)))
                 .toList()
             : null,
       );
