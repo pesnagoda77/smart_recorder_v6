@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="128" fill="#1a237e"/>
+  
+  <!-- Pen body -->
+  <path d="M380 132 L420 172 L280 312 L240 272 Z" fill="#e0f7fa"/>
+  <path d="M240 272 L280 312 L260 352 L220 312 Z" fill="#00bcd4"/>
+  
+  <!-- Sound wave from pen tip -->
+  <path d="M120 280 Q160 240 200 280" stroke="#e0f7fa" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M100 300 Q160 240 220 300" stroke="#e0f7fa" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M80 320 Q160 240 240 320" stroke="#e0f7fa" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.4"/>
+  
+  <!-- Recording dot -->
+  <circle cx="420" cy="132" r="24" fill="#ff3d00"/>
+  <circle cx="420" cy="132" r="14" fill="#ffffff"/>
+</svg>
