@@ -14,7 +14,7 @@ class ExportService {
   }
 
   static Future<void> shareAudioFile(String filePath) async {
-    await Share.shareXFiles([XFile(filePath)], text: 'Аудиозапись из Smart Recorder');
+    await Share.shareXFiles([XFile(filePath)], text: 'Аудиозапись из ДиктаПро');
   }
 
   static Future<String> saveAsTxt(String text, String fileName) async {
@@ -38,7 +38,7 @@ class ExportService {
 
   static String formatTranscriptTxt(Recording rec) {
     final buffer = StringBuffer();
-    buffer.writeln('Smart Recorder — Транскрипция');
+    buffer.writeln('ДиктаПро - Транскрипция');
     buffer.writeln('Дата: ${rec.createdAt}');
     buffer.writeln('Длительность: ${rec.durationMs ~/ 1000} сек');
     buffer.writeln('=' * 40);
@@ -66,7 +66,7 @@ class ExportService {
 
   static String formatTranscript(Recording rec) {
     final buffer = StringBuffer();
-    buffer.writeln('Smart Recorder - Транскрипция');
+    buffer.writeln('ДиктаПро — Транскрипция');
     buffer.writeln('Дата: ${rec.createdAt}');
     buffer.writeln('Длительность: ${rec.durationMs ~/ 1000} сек');
     buffer.writeln('=' * 40);
@@ -98,7 +98,7 @@ class ExportService {
     buffer.writeln('.text{font-size:14px;}');
     buffer.writeln('</style></head><body>');
     buffer.writeln(
-        '<div class="header">Smart Recorder | ${rec.createdAt} | ${rec.durationMs ~/ 1000} сек</div>');
+        '<div class="header">ДиктаПро | ${rec.createdAt} | ${rec.durationMs ~/ 1000} сек</div>');
 
     if (rec.segments != null && rec.segments!.isNotEmpty) {
       for (var seg in rec.segments!) {

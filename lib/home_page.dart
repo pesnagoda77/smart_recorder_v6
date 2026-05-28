@@ -649,7 +649,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 ),
                 onChanged: (value) => setState(() => _searchQuery = value),
               )
-            : const Text('Smart Recorder',
+            : const Text('ДиктаПро',
                 style: TextStyle(fontWeight: FontWeight.bold)),
         centerTitle: !_isSearching,
         elevation: 0,
@@ -915,8 +915,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                             ),
                           )
                         : ListView.builder(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 16, vertical: 8),
+                            padding: const EdgeInsets.only(
+                                left: 16, right: 16, top: 8, bottom: 80),
                             itemCount: filtered.length,
                             itemBuilder: (context, index) {
                               final rec = filtered[index];

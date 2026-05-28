@@ -9,16 +9,16 @@ void main() async {
   await Hive.initFlutter();
   await AudioService().init();
   await TranscriptionService().initModel();
-  runApp(const SmartRecorderApp());
+  runApp(const DictaProApp());
 }
 
-class SmartRecorderApp extends StatelessWidget {
-  const SmartRecorderApp({super.key});
+class DictaProApp extends StatelessWidget {
+  const DictaProApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Smart Recorder',
+      title: 'ДиктаПро',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: const Color(0xFF0F0F1E),
