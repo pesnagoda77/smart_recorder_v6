@@ -1,0 +1,11 @@
+# Launcher Icons Configuration
+# Run: flutter pub add flutter_launcher_icons && flutter pub run flutter_launcher_icons:main
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/launcher_icon.png"
+  adaptive_icon_background: "#2C3E50"
+  adaptive_icon_foreground: "assets/icons/launcher_icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
